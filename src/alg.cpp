@@ -2,9 +2,10 @@
 
 int cbinsearch(int *arr, int size, int value) {
 int a = 0;
-for(int i = 0; i < size; i++)
+for (int i = 0; i < size; i++)
 {
-if(arr[i] == value) a++;
+if (arr[i] == value) a++;
 }
-return a;
+if (a > 0) return a;
+return 0;
 }
